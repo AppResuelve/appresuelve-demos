@@ -9,7 +9,6 @@ for demo_dir in demos/*/; do
   name=$(basename "$demo_dir")
   echo "Building $name..."
   cd "$ORIGIN/$demo_dir"
-  pnpm install 2>/dev/null
   pnpm build
   cd "$ORIGIN"
   cp -r "$demo_dir/dist" "dist/$name"

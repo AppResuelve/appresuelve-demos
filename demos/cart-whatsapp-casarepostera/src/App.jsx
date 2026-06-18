@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cart-whatsapp-casarepostera">
       <CartProvider>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
