@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/cart-whatsapp-aquamare/:path*", "destination": "/cart-whatsapp-aquamare/index.html" },
+    { "source": "/cart-whatsapp-carshine/:path*", "destination": "/cart-whatsapp-carshine/index.html" },
+    { "source": "/cart-whatsapp-casarepostera/:path*", "destination": "/cart-whatsapp-casarepostera/index.html" },
+    { "source": "/corporate-dental/:path*", "destination": "/corporate-dental/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

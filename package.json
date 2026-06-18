@@ -1,0 +1,8 @@
+{
+  "name": "appresuelve-demos",
+  "private": true,
+  "scripts": {
+    "install:all": "pnpm install --recursive",
+    "build:all": "bash build-all.sh"
+  }
+}
