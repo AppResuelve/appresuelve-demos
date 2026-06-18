@@ -78,7 +78,7 @@ function App() {
                     sandbox="allow-scripts allow-same-origin"
                   />
                   <a
-                    href={`./${demo.slug}`}
+                    href={`/${demo.slug}/`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute inset-0 z-10"
