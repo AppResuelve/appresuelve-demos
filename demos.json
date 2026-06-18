@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "cart-whatsapp-aquamare",
+    "title": "AquaMare",
+    "description": "Catálogo WhatsApp",
+    "thumbnail": "",
+    "category": "catalogo-whatsapp",
+    "active": true
+  },
+  {
+    "slug": "cart-whatsapp-carshine",
+    "title": "CarShine",
+    "description": "Lavadero",
+    "thumbnail": "",
+    "category": "catalogo-whatsapp",
+    "active": true
+  },
+  {
+    "slug": "cart-whatsapp-casarepostera",
+    "title": "Casa Repostera",
+    "description": "Repostería artesanal",
+    "thumbnail": "",
+    "category": "catalogo-whatsapp",
+    "active": true
+  },
+  {
+    "slug": "corporate-dental",
+    "title": "Corporate Dental",
+    "description": "Clínica odontológica",
+    "thumbnail": "",
+    "category": "corporativo",
+    "active": true
+  }
+]
