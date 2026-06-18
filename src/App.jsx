@@ -70,7 +70,7 @@ function App() {
               >
                 <div className="relative w-full h-[300px] sm:h-[400px] overflow-hidden bg-[--color-bg-section]">
                   <iframe
-                    src={`./${demo.slug}`}
+                    src={`/${demo.slug}/`}
                     title={demo.title}
                     className="w-full h-full border-0 origin-top-left pointer-events-none"
                     style={{ transform: 'scale(0.5)', transformOrigin: 'top left', width: '200%', height: '200%' }}
@@ -99,7 +99,7 @@ function App() {
                       </p>
                     </div>
                     <a
-                      href={`./${demo.slug}`}
+href={`/${demo.slug}/`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="shrink-0 p-2 rounded-lg text-[--color-text-muted] hover:text-cyan-500 hover:bg-cyan-500/10 transition-colors"
