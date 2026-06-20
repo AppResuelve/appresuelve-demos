@@ -45,10 +45,15 @@ function App() {
 
         <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[--color-border] bg-[--color-bg-card]/70 backdrop-blur-xl text-sm text-[--color-text-secondary] mb-8">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-              Proyectos reales de clientes
-            </div>
+            <a
+              href="https://appresuelve.site"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[--color-border] bg-[--color-bg-card]/70 backdrop-blur-xl text-sm text-[--color-text-secondary] hover:text-[--color-text-primary] hover:border-cyan-400/30 transition-all mb-8"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+              Ir al sitio oficial
+            </a>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95] text-[--color-text-primary]">
               Nuestras
               <span className="block bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 bg-clip-text text-transparent">
