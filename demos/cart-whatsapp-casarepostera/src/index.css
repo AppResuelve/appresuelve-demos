@@ -1,29 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --color-primary: #08a58c;
-  --color-primary-hover: #07a89d;
-  --color-secondary: #c9e7e4;
-  --color-secondary-muted: #b8d4d0;
+  /* Primario — turquesa/teal del cliente */
+  --color-primary: #1a9e8f;
+  --color-primary-hover: #157d72;
+  --color-primary-light: #e8f7f5;
 
-  --color-background: #ffffff;
-  --color-surface: #f8f9fa;
+  /* Acento — dorado/miel cálido */
+  --color-accent: #c8922a;
+  --color-accent-hover: #a87520;
+  --color-accent-light: #fdf3e3;
+
+  /* Fondos */
+  --color-background: #fdfaf6; /* crema muy suave */
+  --color-surface: #ffffff;
   --color-card: #ffffff;
-  --color-elevated: #ffffff;
 
-  --color-text-primary: #1a1a1a;
+  /* Texto */
+  --color-text-primary: #1c1c1c;
   --color-text-secondary: #4a4a4a;
-  --color-text-muted: #6a6a6a;
+  --color-text-muted: #8a8a8a;
 
-  --color-border: #e5e5e5;
-  --color-border-hover: #d0d0d0;
+  /* Bordes */
+  --color-border: #e8e2d9;
+  --color-border-hover: #c8c0b4;
 
-  --font-heading: 'DM Serif Display', serif;
-  --font-body: 'Nunito', sans-serif;
+  /* Tipografías */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
 
   color-scheme: light;
 }
@@ -36,11 +44,25 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
-body, p, span, li, td, input, textarea, button, a, label {
+body,
+p,
+span,
+li,
+td,
+input,
+textarea,
+button,
+a,
+label {
   font-family: var(--font-body);
 }
 
@@ -54,7 +76,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(8, 165, 140, 0.2);
+  background-color: rgba(26, 158, 143, 0.2);
   color: var(--color-text-primary);
 }
 
@@ -62,16 +84,13 @@ body {
   width: 8px;
   height: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: var(--color-surface);
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--color-border);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-border-hover);
 }

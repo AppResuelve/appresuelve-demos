@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:all": "npm run build:demos && vite",
     "build": "vite build",
+    "build:demos": "bash build-all.sh",
     "build:all": "bash build-all.sh"
   },
   "dependencies": {
