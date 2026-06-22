@@ -129,11 +129,11 @@ export default function Home() {
           style={{ color: "var(--color-accent)", opacity: 0.4 }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
           <img
-            src="/heroimage.png"
+            src="./heroimage.png"
             alt="Casa Repostera"
-            className="block w-full lg:mt-0 lg:w-[55%] lg:order-2 object-cover"
+            className="block w-full h-[250px] sm:h-[350px] lg:h-auto lg:mt-0 lg:w-[55%] lg:order-2 object-cover"
             style={{ borderRadius: "0.5rem" }}
           />
 
@@ -268,11 +268,6 @@ export default function Home() {
         }}
       >
         <ScallopDivider fromColor="#ffffff" position="top" />
-        <div
-          className="absolute top-1/2 left-0 right-0 h-px pointer-events-none hidden lg:block"
-          style={{ backgroundColor: "var(--color-border)", opacity: 0.6 }}
-          aria-hidden="true"
-        />
 
         <div className="max-w-7xl mx-auto relative">
           <div className="mb-12">
@@ -284,50 +279,51 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {categories.slice(1).map((category) => (
-              <Link
-                key={category}
-                to={`/productos?cat=${encodeURIComponent(category)}`}
-                className="group flex flex-col items-center gap-3 p-6 transition-all duration-300 hover:-translate-y-1"
-                style={{
-                  borderRadius: "0.75rem",
-                  border: "2px solid var(--color-border)",
-                  backgroundColor: "var(--color-card)",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--color-primary)";
-                  e.currentTarget.style.boxShadow =
-                    "0 8px 28px rgba(26,158,143,0.12)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "var(--color-border)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <div
-                  className="w-14 h-14 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundColor: "var(--color-primary-light)" }}
-                >
-                  <ShoppingBag
-                    className="w-6 h-6"
-                    style={{ color: "var(--color-primary)" }}
-                  />
-                </div>
-                <span
-                  className="font-semibold text-sm text-center leading-tight"
+              <div key={category} className="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[calc(25%-0.75rem)]">
+                <Link
+                  to={`/productos?cat=${encodeURIComponent(category)}`}
+                  className="group flex flex-col items-center gap-3 p-6 transition-all duration-300 hover:-translate-y-1"
                   style={{
-                    color: "var(--color-text-primary)",
-                    fontFamily: "var(--font-body)",
+                    borderRadius: "0.75rem",
+                    border: "2px solid var(--color-border)",
+                    backgroundColor: "var(--color-card)",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "var(--color-primary)";
+                    e.currentTarget.style.boxShadow =
+                      "0 8px 28px rgba(26,158,143,0.12)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--color-border)";
+                    e.currentTarget.style.boxShadow = "none";
                   }}
                 >
-                  {category}
-                </span>
-                <div
-                  className="h-0.5 w-0 group-hover:w-8 rounded-full transition-all duration-300"
-                  style={{ backgroundColor: "var(--color-accent)" }}
-                />
-              </Link>
+                  <div
+                    className="w-14 h-14 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                    style={{ backgroundColor: "var(--color-primary-light)" }}
+                  >
+                    <ShoppingBag
+                      className="w-6 h-6"
+                      style={{ color: "var(--color-primary)" }}
+                    />
+                  </div>
+                  <span
+                    className="font-semibold text-sm text-center leading-tight"
+                    style={{
+                      color: "var(--color-text-primary)",
+                      fontFamily: "var(--font-body)",
+                    }}
+                  >
+                    {category}
+                  </span>
+                  <div
+                    className="h-0.5 w-0 group-hover:w-8 rounded-full transition-all duration-300"
+                    style={{ backgroundColor: "var(--color-accent)" }}
+                  />
+                </Link>
+              </div>
             ))}
           </div>
         </div>
