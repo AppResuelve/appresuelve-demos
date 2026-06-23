@@ -85,10 +85,6 @@ export function ContactForm() {
 
   return (
     <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 sm:p-12">
-      <h3 className="text-2xl font-bold text-[var(--color-text-primary)] mb-8">
-        Enviános tu mensaje
-      </h3>
-
       <form onSubmit={handleSubmit} className="space-y-6">
         <div
           style={{ position: "absolute", left: "-9999px" }}
@@ -186,7 +182,22 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] text-white font-semibold hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+          style={{
+            padding: "0.875rem 2rem",
+            borderRadius: "0.5rem",
+            backgroundColor: "var(--color-primary)",
+            color: "#ffffff",
+            boxShadow: "0 4px 16px rgba(26,158,143,0.3)",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.backgroundColor =
+              "var(--color-primary-hover)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.backgroundColor =
+              "var(--color-primary)")
+          }
         >
           {status === "loading" ? (
             <>
